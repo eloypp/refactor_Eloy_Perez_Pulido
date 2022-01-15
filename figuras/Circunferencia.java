@@ -31,10 +31,10 @@ public class Circunferencia {
         this.radio = radio;
     }
 
-    public boolean esIgual(Circunferencia otro, boolean conDecimales) {
+    public boolean esIgual(boolean considerarDecimales, Circunferencia otro) {
         double radio1 = this.radio;
         double radio2 = otro.getRadio();
-        if (conDecimales) {
+        if (considerarDecimales) {
             if (radio1 == radio2)
                 return true;
             else
